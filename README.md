@@ -2,10 +2,11 @@
 
 Michael Joseph Candra's individual portfolio case study of Group 5 Beng-Beng's Goodreads concept redesign. Michael's role is team leader; the research, design and testing outcomes are credited to the group.
 
-Intended repository: `michaeljc2605/dv2008`  
-Intended GitHub Pages URL: `https://michaeljc2605.github.io/dv2008/`
+Repository: [michaeljc2605/dv2008](https://github.com/michaeljc2605/dv2008)
 
-This is a separate repository from `michaeljc2605.github.io`, like the existing `teduh-site` project. A new portfolio card links to this site. The GitHub repository and public deployment have **not** been created from this environment.
+Live case study: https://michaeljc2605.github.io/dv2008/
+
+Published through GitHub Pages Actions on 15 November 2026 and verified in Chrome. This is a separate repository from `michaeljc2605.github.io`, like the existing `teduh-site` project. The portfolio card links to this case study and its prototype section.
 
 ## Included experience
 
@@ -58,7 +59,7 @@ If the repository already exists, clone or fetch `michaeljc2605/dv2008`, inspect
 
 The Notion assignment brief was accessed and reviewed in Chrome on 15 November 2026. It asks for an individual case study aimed at a recruiter or design manager, covering the problem, design process and reasoning, individual contributions, relevant visuals, and reflection on learnings, challenges, trade-offs and improvements. It sets no minimum or maximum word count or required number of pages or screens, and allows any accessible, easy-to-read format. The assessment criteria are recorded in `docs/sources.md`; reviewing the brief does not establish a grade or full rubric compliance.
 
-Direct review of the A2 Figma file remains pending; A2 claims are grounded in the A3 deck's recap. Read `docs/sources.md` for exact evidence and source discrepancies. User confirmation dated 14 November 2026 treats study data as actual. Round 2 refinements remain proposed and unretested unless separately verified.
+The original A2 Figma presentation's idea-testing and selected-direction slides were reviewed in Chrome on 15 November 2026, confirming the five-reader comparison, selected A + C + K flow and reported scores. Read `docs/sources.md` for exact evidence and source discrepancies. User confirmation dated 14 November 2026 treats study data as actual. Round 2 refinements remain proposed and unretested unless separately verified.
 
 The embedded Figma prototype still depends on the file's sharing settings and Figma availability. It has a permanent external-link fallback. This is a student concept, not a functioning Goodreads integration or recommendation backend.
 

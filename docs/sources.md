@@ -20,8 +20,8 @@ The PDFs are unchanged copies of the user's supplied files. They retain their or
 | 41 survey respondents; 6 interview participants | A1 pp5–7; A3 p3. Accessible-network sample; do not generalize to all Goodreads readers. |
 | Discovery through friends/family 28/41, TikTok/Instagram 28/41, Goodreads 6/41 | A3 p4; Goodreads count also A1 p11. Multiple responses were allowed. |
 | Saving did not necessarily help choosing | A1 p13: direct P3/P5 quotes. Attribute those quotes to anonymized participants. |
-| 12 ideas; two scoring rounds; A vs E tested with 5 readers | A3 p3. A2 source has not yet been independently read. |
-| Selected ideas A + C + K; A score 11/12, K score 12/12 | A3 p7. This is the A3 recap of A2, not a direct reading of the A2 design file. |
+| 12 ideas; two scoring rounds; A vs E tested with 5 readers | A3 p3. A2 presentation slide 14 was reviewed directly in Chrome on 15 November 2026 and confirms five readers tried A, then E. |
+| Selected ideas A + C + K; A score 11/12, K score 12/12 | A3 p7; also confirmed directly in A2 presentation slide 20 in Chrome on 15 November 2026. |
 | Save first; optional reason; picks without reasons; connected flow | A3 pp10–14. |
 | Save → list → questions → three picks → decide | A3 p14; detailed walkthrough pp21–24. |
 | Start reading moves the book to Currently Reading; Not now excludes it for 30 days; Remove removes it from Want to Read | A3 pp14,24–25. Prototype behavior, not a deployed Goodreads integration. |
@@ -40,7 +40,7 @@ The five-person sample and possible familiarity/task-order effects (A3 p16) rema
 
 ## Verification and attribution boundaries
 
-- **A2 live file:** direct exploration remains pending: <https://www.figma.com/design/sjcfOTEzGJTYfkeSn6JxTu/>. Current A2 statements come from A3 pp3,7. A3 p7 reports 3/5 would use idea A; earlier presentation-script notes referred to a conflicting 4/5. Omit that preference count until the direct A2 evidence resolves it.
+- **A2 live file:** the original [Figma presentation](https://www.figma.com/design/sjcfOTEzGJTYfkeSn6JxTu/) was accessible in Chrome on 15 November 2026. Slide 14, "Idea testing", states that five readers from A1 tried idea A followed by E and that three of five picked A. Slide 20, "Selected direction", confirms A + C + K, scores of 11/12 for A and 12/12 for K, and three of five readers preferring A when choosing a next read. This supports the A3 recap's 3/5 figure over the earlier script's 4/5; the public page continues to omit that preference count. This review covered those two slides, not every A2 frame or interaction.
 - **A3 prototype:** supplied link: <https://www.figma.com/proto/zPU9X8697ZM5EA3bj2FdTb?node-id=5-2&starting-point-node-id=5%3A2>. Screenshots were extracted unchanged from the supplied A3 PDF. They are not independent proof that all current prototype interactions were tested.
 - **Round 2:** the PDF marks the two changes as proposed and requiring validation. Its final shortlist screenshot still shows “Shuffle picks” and “Change answers.” Do not claim the new labels were implemented or that a second test occurred without additional evidence.
 - **Individual contribution:** the role title “team leader” is user-confirmed. Do not invent specific personal duties, claim sole authorship, or turn team achievements into first-person individual achievements. Use team attribution unless the user confirms the allocation of work.
