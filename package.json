@@ -1,0 +1,7 @@
+{
+  "name": "dv2008",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Narrow to Now — Michael Joseph Candra's DV2008 case study",
+  "scripts": { "build": "node scripts/build.mjs", "check": "node scripts/check.mjs" }
+}
