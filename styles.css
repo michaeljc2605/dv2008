@@ -59,3 +59,131 @@ body:has(dialog[open]) .cursor-dot,body:has(dialog[open]) .cursor-outline{visibi
 @media(any-pointer:coarse) and (any-hover:none){.cursor-dot,.cursor-outline{display:none}}
 @media(prefers-reduced-motion:reduce){.cursor-dot,.cursor-outline{transition:none}}
 @media print{.cursor-dot,.cursor-outline{display:none}}
+
+/* Reading copy stays comfortable without changing the portfolio background. */
+@media screen {
+  body { font-size: 15px; }
+  .hero-description, .section-deck, .prose, .role-note>p,
+  .research-layout p, .insight-list p, .decision-feature .prose,
+  .comparison-copy p:not(.eyebrow), .refinement-pair p:not(.eyebrow),
+  .flow-description>p, .next-refinements li p, .takeaways p,
+  .prototype-instruction, .research-approach p, .concept-process p,
+  .concept-evaluation .prose, .concept-tradeoff p:not(.eyebrow),
+  .concept-wireframes p, .decision-matrix figcaption>p,
+  .thanks-copy .thanks-message, .contribution-block p, .reflection-step .prose {
+    font-size: 15px;
+    line-height: 1.85;
+  }
+  .source-note, .small-copy, .study-note, .embed-fallback,
+  .comparison-figure figcaption, .research-journey>.small-copy,
+  .decision-matrix .matrix-source, .thanks-photo figcaption,
+  .participant-paths p, .outcomes p, .edge-grid p, .flow-principle p,
+  .reader-journey p, .concept-combination p, .journey-stages p,
+  .test-method p, .chapter-conclusion, .matrix-ideas dt {
+    font-size: 13px;
+    line-height: 1.85;
+  }
+  .chart-note, .concept-tradeoff .small-copy { font-size: 12px!important; }
+  .results-table { font-size: 14px; }
+  .results-table thead, .results-table caption { font-size: 12px; }
+  .results-table th, .results-table td { padding: 17px 18px; }
+  .results-highlight>div>p:last-child { font-size: 13px; }
+  .result-context p { font-size: 13px!important; }
+  .research-methods span, .chart-row>div:first-child { font-size: 13px; }
+  .project-meta strong { font-size: 13px; }
+  .project-meta small, .matrix-ideas dd, .resource-links small { font-size: 12px; }
+  .chapter-nav a { font-size: 11px; }
+  .text-link, .chapter-links .text-link, .resource-links a>span { font-size: 13px; }
+  .insight-list h3, .research-approach h3, .concept-process h3,
+  .concept-wireframes h3 { font-size: 18px; }
+  .concept-combination h3, .outcomes h4, .next-refinements h4,
+  .edge-grid h4, .reader-journey h4 { font-size: 16px; }
+  .flow-tabs button, .segmented button { font-size: 12px; }
+  .matrix-ideas summary, .edge-details summary { font-size: 14px; }
+  .image-zoom>span, .wireframe-link>span,
+  .decision-matrix .wireframe-link>span { font-size: 11px; }
+  .study-note { padding: 22px 24px; }
+  .contribution-block {
+    margin-top: 58px;
+    padding-block: 32px;
+    border-block: 1px solid var(--line);
+  }
+  .contribution-header { max-width: 920px; }
+  .contribution-header h3 { font-size: 26px; margin: 0 0 20px; }
+  .contribution-header .eyebrow { margin-bottom: 15px; }
+  .contribution-header>p, .contribution-grid p { color: var(--muted); }
+  .contribution-grid {
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    gap: 32px;
+    margin-top: 32px;
+  }
+  .contribution-grid article { border-top: 1px solid var(--line); padding-top: 24px; }
+  .contribution-grid .small-label, .reflection-step .small-label {
+    font-size: 11px;
+    color: var(--cyan);
+  }
+  .contribution-grid h4 { font-size: 18px; margin: 16px 0 14px; }
+  .reflection-story { margin-bottom: 58px; }
+  .reflection-step {
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    gap: 64px;
+    padding-block: 30px;
+    border-top: 1px solid var(--line);
+  }
+  .reflection-step:last-child { border-bottom: 1px solid var(--line); }
+  .reflection-step h3 { font-size: 23px; margin: 12px 0 0; }
+  .reflection-step .prose p { margin-bottom: 0; }
+}
+@media screen and (max-width:800px) {
+  .contribution-grid { grid-template-columns: 1fr; gap: 28px; }
+  .reflection-step { grid-template-columns: 1fr; gap: 20px; }
+  .reflection-step h3 { font-size: 22px; }
+  .insight-list { grid-template-columns: 1fr; gap: 25px; }
+  .insight-list article { display: flex; gap: 18px; }
+  .insight-list h3 { margin-top: 0; }
+}
+@media screen and (max-width:540px) {
+  .hero-description, .section-deck, .prose, .role-note>p,
+  .research-layout p, .insight-list p, .decision-feature .prose,
+  .comparison-copy p:not(.eyebrow), .refinement-pair p:not(.eyebrow),
+  .flow-description>p, .next-refinements li p, .takeaways p,
+  .prototype-instruction, .research-approach p, .concept-process p,
+  .concept-evaluation .prose, .concept-tradeoff p:not(.eyebrow),
+  .concept-wireframes p, .decision-matrix figcaption>p,
+  .thanks-copy .thanks-message, .contribution-block p, .reflection-step .prose {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+  .source-note, .small-copy, .embed-fallback, .comparison-figure figcaption,
+  .research-journey>.small-copy, .decision-matrix .matrix-source,
+  .thanks-photo figcaption, .participant-paths p, .edge-grid p,
+  .reader-journey p, .concept-combination p, .matrix-ideas dt,
+  .resource-links small { font-size: 12px; }
+  .study-note, .outcomes article p, .flow-principle p, .journey-stages p,
+  .test-method p, .chapter-conclusion { font-size: 13px; }
+  .results-table { min-width: 0; font-size: 14px; }
+  .results-table thead, .results-table caption { font-size: 12px; }
+  .results-table th, .results-table td { padding: 14px 8px; }
+  .project-meta strong { font-size: 12px; }
+  .project-meta small { font-size: 11px; }
+  .research-methods span, .chart-row>div:first-child { font-size: 12px; }
+  .result-context p { font-size: 13px!important; }
+  .concept-process h3, .concept-wireframes h3, .research-approach h3,
+  .insight-list h3 { font-size: 17px; }
+  .concept-combination h3, .outcomes h4, .edge-grid h4,
+  .reader-journey h4 { font-size: 15px; }
+  .text-link, .chapter-links .text-link, .resource-links a>span { font-size: 12px; }
+  .flow-tabs button { min-width: 112px; }
+  .image-zoom>span, .wireframe-link>span,
+  .decision-matrix .wireframe-link>span { font-size: 10px; }
+  .study-note { padding: 18px; }
+  .contribution-block { margin-top: 38px; padding-block: 28px; }
+  .contribution-header h3 { font-size: 23px; }
+  .contribution-grid { margin-top: 26px; }
+  .contribution-grid h4 { font-size: 18px; }
+  .reflection-story { margin-bottom: 42px; }
+  .reflection-step { padding-block: 26px; }
+  .reflection-step h3 { font-size: 21px; }
+}

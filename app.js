@@ -89,8 +89,16 @@ const observedSections=sectionLinks.map(link=>document.querySelector(link.getAtt
 function updateReadingPosition(){
   const total=document.documentElement.scrollHeight-window.innerHeight;
   $('reading-progress').style.width=`${total>0?Math.min(100,Math.max(0,window.scrollY/total*100)):0}%`;
+  if(!observedSections.length)return;
+  const scrollPadding=parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop)||0;
   let current=observedSections[0];
-  for(const section of observedSections){if(section.getBoundingClientRect().top<=150) current=section;}
+  for(const section of observedSections){
+    // Anchor scrolling adds both offsets; allow for subpixel rounding at rest.
+    const scrollMargin=parseFloat(getComputedStyle(section).scrollMarginTop)||0;
+    if(section.getBoundingClientRect().top<=scrollPadding+scrollMargin+2) current=section;
+  }
+  // A short final chapter may never reach the anchor offset before the page ends.
+  if(total>0 && window.scrollY>=total-2) current=observedSections.at(-1);
   sectionLinks.forEach(link=>{
     const active=link.getAttribute('href')===`#${current.id}`;
     link.classList.toggle('is-current',active);

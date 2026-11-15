@@ -22,7 +22,9 @@ for(const match of html.matchAll(/<img\b[^>]*>/g)) if(!/\balt="[^"]*"/.test(matc
 for(const match of html.matchAll(/<a\b[^>]*target="_blank"[^>]*>/g))if(!/\brel="[^"]*noopener/.test(match[0]))errors.push('External tab link missing noopener.');
 for(const match of app.matchAll(/\$\('([^']+)'\)/g))if(!ids.includes(match[1]))errors.push(`Script references missing id ${match[1]}`);
 if(!html.includes('starting-point-node-id=5%3A2'))errors.push('Missing verified Figma starting node.');
-if(!html.includes('Team leader'))errors.push('Team leader role is missing.');
+if(/team leader/i.test(html))errors.push('Unsupported team-leader title remains.');
+if(!html.includes('ideas J, K and L'))errors.push('A2 idea contribution is missing.');
+if(!html.includes('shared concept testing and prototype UI work'))errors.push('Shared concept testing and prototype contribution is missing.');
 for(const file of ['app.js','background.js','scripts/build.mjs'])execFileSync(process.execPath,['--check',path.join(root,file)]);
 if(errors.length){console.error(errors.join('\n'));process.exit(1);}
 console.log(`Passed: ${ids.length} unique IDs, local assets, anchors, walkthrough screens, image alternatives, links, role and JavaScript syntax.`);

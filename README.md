@@ -1,6 +1,6 @@
 # DV2008 — Narrow to Now
 
-Michael Joseph Candra's individual portfolio case study of Group 5 Beng-Beng's Goodreads concept redesign. Michael's role is team leader; the research, design and testing outcomes are credited to the group.
+Michael Joseph Candra's individual portfolio case study of Group 5 Beng-Beng's Goodreads concept redesign. Michael contributed to the team as a member, including A2 ideas J, K and L; the research, design and testing outcomes are credited to the group.
 
 Repository: [michaeljc2605/dv2008](https://github.com/michaeljc2605/dv2008)
 
@@ -11,11 +11,11 @@ Published through GitHub Pages Actions on 15 November 2026 and verified in Chrom
 ## Included experience
 
 - A1 → A2 → A3 project progression, evidence and design decisions.
-- Team-leader framing without inventing individual responsibilities.
+- Michael's confirmed contributions to ideation (A2 ideas J, K and L), shared concept testing and prototype UI work, coordination, interviewing, task preparation, presentations and submission, with shared outcomes credited to the team.
 - Original prototype screens, an A2/A3 comparison and six-step interactive walkthrough.
-- Study outcomes, limits, proposed follow-up changes and personal takeaways.
+- Study outcomes, limits, proposed follow-up changes and Michael's concrete reflection on learning FigJam, colour theory and interviewing.
 - Figma embed loaded on request, plus a direct prototype link and static screen fallback.
-- Research and presentation PDFs, including the user-requested wording edit to A3 pages 19–20.
+- Research and presentation PDFs, including the user-authorised correction of A3 data-status wording in visible and extractable text.
 - The exact live portfolio background: fixed industrial scene, scroll-driven six-stage palette, smoke, circuits, stars, transparent sections, mobile and reduced-motion support.
 
 ## Preview locally
@@ -60,7 +60,7 @@ If the repository already exists, clone or fetch `michaeljc2605/dv2008`, inspect
 
 The Notion assignment brief was accessed and reviewed in Chrome on 15 November 2026. It asks for an individual case study aimed at a recruiter or design manager, covering the problem, design process and reasoning, individual contributions, relevant visuals, and reflection on learnings, challenges, trade-offs and improvements. It sets no minimum or maximum word count or required number of pages or screens, and allows any accessible, easy-to-read format. The assessment criteria are recorded in `docs/sources.md`; reviewing the brief does not establish a grade or full rubric compliance.
 
-The original A2 Figma presentation's idea-testing and selected-direction slides were reviewed in Chrome on 15 November 2026, including the original twelve-idea decision matrix, confirming the five-reader comparison, selected A + C + K flow and reported scores. Read `docs/sources.md` for exact evidence and source discrepancies. User confirmation dated 14 November 2026 treats study data as actual. Round 2 refinements remain proposed and unretested unless separately verified.
+The original A2 Figma presentation's idea-testing and selected-direction slides were reviewed in Chrome on 15 November 2026, including the original twelve-idea decision matrix, confirming the five-reader comparison, selected A + C + K flow and reported scores. Michael subsequently explained the scoring: four members each had up to three points, considering feasibility, wireframe design and expected effect from the explanation. Read `docs/sources.md` for evidence and contribution provenance. Michael confirmed on 14 and 15 November 2026 that the study data are actual. Round 2 refinements remain proposed and unretested unless separately verified.
 
 The embedded Figma prototype still depends on the file's sharing settings and Figma availability. It has a permanent external-link fallback. This is a student concept, not a functioning Goodreads integration or recommendation backend.
 

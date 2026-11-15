@@ -21,7 +21,7 @@ if (evolutionHero && evolutionBackground && evolutionCanvas) {
 
     let evolutionTarget = 0;
     let evolutionDisplay = 0;
-    let evolutionFrame;
+    let evolutionFrame = null;
     let evolutionVisible = document.visibilityState !== 'hidden';
     let evolutionWidth = 0;
     let evolutionHeight = 0;
@@ -271,6 +271,8 @@ if (evolutionHero && evolutionBackground && evolutionCanvas) {
     };
 
     const renderEvolution = (timestamp = performance.now()) => {
+        evolutionFrame = null;
+        if (!evolutionVisible) return;
         evolutionDisplay += (evolutionTarget - evolutionDisplay) * (reducedMotion.matches ? 1 : 0.075);
         if (Math.abs(evolutionTarget - evolutionDisplay) < 0.0005) evolutionDisplay = evolutionTarget;
         setEvolutionState(evolutionDisplay);
@@ -285,10 +287,13 @@ if (evolutionHero && evolutionBackground && evolutionCanvas) {
 
     const requestEvolutionRender = () => {
         evolutionTarget = getEvolutionProgress();
-        if (!evolutionFrame && evolutionVisible && !reducedMotion.matches) {
-            evolutionFrame = requestAnimationFrame(renderEvolution);
-        } else if (reducedMotion.matches) {
+        if (!evolutionVisible) return;
+        if (reducedMotion.matches) {
+            if (evolutionFrame !== null) cancelAnimationFrame(evolutionFrame);
+            evolutionFrame = null;
             renderEvolution();
+        } else if (evolutionFrame === null) {
+            evolutionFrame = requestAnimationFrame(renderEvolution);
         }
     };
 
@@ -297,9 +302,12 @@ if (evolutionHero && evolutionBackground && evolutionCanvas) {
     window.addEventListener('scroll', requestEvolutionRender, { passive: true });
     document.addEventListener('visibilitychange', () => {
         evolutionVisible = document.visibilityState !== 'hidden';
-        if (evolutionVisible) requestEvolutionRender();
-        else if (evolutionFrame) cancelAnimationFrame(evolutionFrame);
-        evolutionFrame = null;
+        if (!evolutionVisible) {
+            if (evolutionFrame !== null) cancelAnimationFrame(evolutionFrame);
+            evolutionFrame = null;
+            return;
+        }
+        requestEvolutionRender();
     });
     window.addEventListener('resize', () => {
         resizeEvolutionCanvas();
