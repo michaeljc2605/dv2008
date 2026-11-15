@@ -1,6 +1,6 @@
 # DV2008 — Narrow to Now
 
-Michael Joseph Candra's individual portfolio case study of Group 5 Beng-Beng's Goodreads concept redesign. Michael contributed to the team as a member, including A2 ideas J, K and L; the research, design and testing outcomes are credited to the group.
+Michael Joseph Candra's individual portfolio case study of Group 5 Beng-Beng's Goodreads concept redesign. It shows his research, A2 ideas J, K and L, and prototype UI within the team's shared design and testing work.
 
 Repository: [michaeljc2605/dv2008](https://github.com/michaeljc2605/dv2008)
 
@@ -11,8 +11,8 @@ Published through GitHub Pages Actions on 15 November 2026 and verified in Chrom
 ## Included experience
 
 - A1 → A2 → A3 project progression, evidence and design decisions.
-- Michael's confirmed contributions to ideation (A2 ideas J, K and L), shared concept testing and prototype UI work, coordination, interviewing, task preparation, presentations and submission, with shared outcomes credited to the team.
-- Original prototype screens, an A2/A3 comparison and six-step interactive walkthrough.
+- Michael's confirmed contributions: A1 interviews, affinity-map setup and problem statement; A2 ideas J, K and L, the “Is it for me?” card and decide step; A3 Want to Read list, Add a reason overlay and questionnaire screens 04–07; pilot test, P4 facilitation and P1 notes. The team retains credit for shared outcomes.
+- Michael's original J, K and L sketches, prototype screens, an A2/A3 comparison and six-step interactive walkthrough.
 - Study outcomes, limits, proposed follow-up changes and Michael's concrete reflection on learning FigJam, colour theory and interviewing.
 - Figma embed loaded on request, plus a direct prototype link and static screen fallback.
 - Research and presentation PDFs, including the user-authorised correction of A3 data-status wording in visible and extractable text.
@@ -51,7 +51,7 @@ If the repository already exists, clone or fetch `michaeljc2605/dv2008`, inspect
 | `styles.css` | Portfolio-matched design and responsive layout |
 | `background.css`, `background.js` | Actual portfolio scene and canvas animation, with a canvas-unavailable fallback |
 | `app.js` | Walkthrough, comparison, image dialog, embed and chapter indicator |
-| `assets/screens/` | Optimised prototype images extracted from the supplied final deck |
+| `assets/screens/` | Prototype images extracted from the supplied final deck, plus Michael's three original A2 wireframe photographs |
 | `assets/people/` | User-supplied group photograph for the closing special thanks |
 | `docs/` | Research/presentation PDFs and editorial source notes |
 | `scripts/` | Dependency-free build and integrity checks |

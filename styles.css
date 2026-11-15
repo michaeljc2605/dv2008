@@ -187,3 +187,71 @@ body:has(dialog[open]) .cursor-dot,body:has(dialog[open]) .cursor-outline{visibi
   .reflection-step { padding-block: 26px; }
   .reflection-step h3 { font-size: 21px; }
 }
+
+/* Keep individual contributions visible beside the shared project story. */
+@media screen and (min-width:1101px) {
+  .contribution-grid { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 28px; }
+}
+@media screen and (min-width:801px) and (max-width:1100px) {
+  .contribution-grid article:last-child { grid-column: 1 / -1; max-width: 670px; }
+}
+.contribution-support {
+  max-width: 940px;
+  margin-top: 30px;
+  padding-left: 18px;
+  border-left: 2px solid var(--cyan);
+  color: var(--muted);
+}
+.personal-note {
+  display: grid;
+  grid-template-columns: 180px minmax(0,1fr);
+  gap: 26px;
+  margin: 38px 0;
+  padding: 25px 0;
+  border-block: 1px solid var(--line);
+}
+.personal-note .small-label { color: var(--cyan); font-size: 11px; }
+.personal-note p { max-width: 900px; margin: 0; color: var(--muted); font-size: 15px; line-height: 1.85; }
+.my-interface {
+  margin: 62px 0 48px;
+  padding-top: 44px;
+  border-top: 1px solid var(--line);
+}
+.my-interface-intro { max-width: 900px; margin-bottom: 32px; }
+.my-interface-intro .eyebrow { margin-bottom: 14px; }
+.my-interface-intro h3 { font-size: clamp(24px,2.4vw,34px); margin-bottom: 16px; }
+.my-interface-intro>p:last-child { color: var(--muted); font-size: 15px; line-height: 1.85; }
+.my-interface-gallery { margin-bottom: 20px; }
+.my-interface-note { color: var(--muted); font-size: 12px; }
+.idea-sketches { margin: 28px 0 65px; }
+.idea-sketches-intro { max-width: 950px; margin-bottom: 28px; }
+.idea-sketches-intro .eyebrow { margin-bottom: 13px; }
+.idea-sketches-intro h3 { font-size: clamp(23px,2.2vw,31px); margin-bottom: 14px; }
+.idea-sketches-intro>p:last-child { color: var(--muted); font-size: 15px; line-height: 1.85; }
+.idea-sketch-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 22px; }
+.idea-sketch { min-width: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 5px; background: #0a0e2740; }
+.idea-sketch-selected { border-color: var(--cyan); box-shadow: 0 0 28px #00fff510; }
+.idea-sketch .wireframe-link { background: #fff; }
+.idea-sketch .wireframe-link img { width: 100%; aspect-ratio: 1280/889; object-fit: contain; }
+.idea-sketch figcaption { padding: 22px; }
+.idea-sketch .small-label { color: var(--cyan); font-size: 9px; }
+.idea-sketch h4 { font-size: 18px; margin: 10px 0; }
+.idea-sketch p { color: var(--muted); font-size: 13px; line-height: 1.8; }
+@media screen and (max-width:1000px) {
+  .idea-sketch-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .idea-sketch-selected { grid-row: 1; grid-column: 1 / -1; }
+}
+@media screen and (max-width:800px) {
+  .personal-note { grid-template-columns: 1fr; gap: 10px; }
+  .my-interface { margin-top: 48px; padding-top: 34px; }
+}
+@media screen and (max-width:540px) {
+  .contribution-support, .personal-note p, .my-interface-intro>p:last-child { font-size: 15px; line-height: 1.8; }
+  .my-interface-note { font-size: 12px; }
+  .idea-sketches { margin: 24px 0 46px; }
+  .idea-sketches-intro>p:last-child { font-size: 15px; line-height: 1.8; }
+  .idea-sketch-grid { grid-template-columns: 1fr; gap: 20px; }
+  .idea-sketch-selected { grid-row: auto; grid-column: auto; }
+  .idea-sketch figcaption { padding: 20px; }
+  .idea-sketch p { font-size: 13px; }
+}
