@@ -6,19 +6,20 @@ This file records provenance and unresolved checks for the DV2008 website. It is
 
 | Reference | Local file | Relevant evidence |
 | --- | --- | --- |
-| Assignment 1 presentation | [a1-presentation.pdf](./a1-presentation.pdf) | Research question and sample: pp5–7. Interview and observation methods: pp8,10. Cross-platform journey: p9. Participant findings and quotes: pp11–13. Synthesis: pp14–15. |
+| Assignment 1 presentation | [a1-presentation.pdf](./a1-presentation.pdf) | Research question and participant group: pp5–7. Interview and observation methods: pp8,10. Cross-platform journey: p9. Participant findings and quotes: pp11–13. Synthesis: pp14–15. |
 | Background research | [a1-background-research.pdf](./a1-background-research.pdf) | Existing experience: p1. Exploratory public discussions: p2. Competitor/literature context: p3. Research-question development: p4. Source list: p5. |
 | Assignment 3 final presentation | [a3-final-presentation.pdf](./a3-final-presentation.pdf) | Team and project: p1. A1–A3 progression: p3. Discovery counts: p4. A2 recap: p7. Feedback and scope: pp8–9. First refinements: pp10–13. Flow: p14. Evaluation: pp15–19. Further refinements: p20. Screens: pp21–25. Design system: p26. Learnings: p27. |
 
-The PDFs are unchanged copies of the user's supplied files. They retain their original wording, including source-status labels discussed below.
+The A1 PDFs are unchanged copies of the user's supplied files. On 15 November 2026, at the user's request, the published A3 copy was edited to remove four occurrences of the word ‘sample’ on pages 19–20. The remaining text was closed up using the original vector lettering; all other page content was preserved. The supplied original remains in repository history. Source-status labels discussed below are otherwise unchanged.
 
 ## Claim provenance
 
 | Website claim | Source / qualification |
 | --- | --- |
 | Michael Joseph Candra was team leader | Explicitly confirmed by the user on 14 November 2026. A3 p1 names Celine, Janice, Michelle and Michael as team members. The PDFs do not assign individual duties. |
-| 41 survey respondents; 6 interview participants | A1 pp5–7; A3 p3. Accessible-network sample; do not generalize to all Goodreads readers. |
+| 41 survey respondents; 6 interview participants | A1 pp5–7; A3 p3. Participants recruited through accessible networks; do not generalize to all Goodreads readers. |
 | Discovery through friends/family 28/41, TikTok/Instagram 28/41, Goodreads 6/41 | A3 p4; Goodreads count also A1 p11. Multiple responses were allowed. |
+| Research framing, interview/observation approach, and cross-platform participant journeys | A1 pp2,4–10. The five-step website diagram synthesizes A1 p9; P1 and P5 routes are shown separately so it does not imply every participant took the same path. |
 | Saving did not necessarily help choosing | A1 p13: direct P3/P5 quotes. Attribute those quotes to anonymized participants. |
 | 12 ideas; two scoring rounds; A vs E tested with 5 readers | A3 p3. A2 presentation slide 14 was reviewed directly in Chrome on 15 November 2026 and confirms five readers tried A, then E. |
 | Selected ideas A + C + K; A score 11/12, K score 12/12 | A3 p7; also confirmed directly in A2 presentation slide 20 in Chrome on 15 November 2026. |
@@ -26,7 +27,7 @@ The PDFs are unchanged copies of the user's supplied files. They retain their or
 | Save → list → questions → three picks → decide | A3 p14; detailed walkthrough pp21–24. |
 | Start reading moves the book to Currently Reading; Not now excludes it for 30 days; Remove removes it from Want to Read | A3 pp14,24–25. Prototype behavior, not a deployed Goodreads integration. |
 | Five readers, ages 20–23; Zoom think-aloud; four tasks; 43-book prototype | A3 pp15–17. Session date shown as 7 November 2026. |
-| Choice within 3 minutes 3/5 → 5/5; median choice time 148s → 88s; confidence 2.8 → 4.0 /5; ease 3.8 → 5.8 /7; reasons added 3/5 | A3 p18, with the user's data-status confirmation below. Preserve scale labels and small sample size. |
+| Choice within 3 minutes 3/5 → 5/5; median choice time 148s → 88s; confidence 2.8 → 4.0 /5; ease 3.8 → 5.8 /7; reasons added 3/5 | A3 p18, with the user's data-status confirmation below. Preserve scale labels and the limited number of participants. |
 | Save confirmation and clearer refresh/preference labels | A3 p20 describes proposed follow-up changes. Implementation and retesting are not established by the PDFs. |
 | Palette, typography and reported accessibility checks | A3 p26. Team-reported checks, not independent accessibility certification. |
 
@@ -34,13 +35,13 @@ The PDFs are unchanged copies of the user's supplied files. They retain their or
 
 On **14 November 2026**, the user stated: **“all of it is actual data, trust me.”** This is the user's confirmation of the project data supplied for this case study.
 
-The attached A3 deck nevertheless labels the results on pp16,18–20 as illustrative/not observed and the behaviors on p19 as hypothetical. The website's treatment of these figures as actual team study results relies on the user's later confirmation. Preserve this provenance distinction; do not state that the PDF itself independently verifies observed results, and do not silently alter the source PDF.
+The attached A3 deck nevertheless labels the results on pp16,18–20 as illustrative/not observed and the behaviors on p19 as hypothetical. The website's treatment of these figures as actual team study results relies on the user's later confirmation. Preserve this provenance distinction; do not state that the PDF itself independently verifies observed results, and keep any further source-PDF edits within specific user requests.
 
-The five-person sample and possible familiarity/task-order effects (A3 p16) remain limitations. The results are prototype-study findings, not evidence of population-wide or production impact.
+The five-person study and possible familiarity/task-order effects (A3 p16) remain limitations. The results are prototype-study findings, not evidence of population-wide or production impact.
 
 ## Verification and attribution boundaries
 
-- **A2 live file:** the original [Figma presentation](https://www.figma.com/design/sjcfOTEzGJTYfkeSn6JxTu/) was accessible in Chrome on 15 November 2026. Slide 14, "Idea testing", states that five readers from A1 tried idea A followed by E and that three of five picked A. Slide 20, "Selected direction", confirms A + C + K, scores of 11/12 for A and 12/12 for K, and three of five readers preferring A when choosing a next read. This supports the A3 recap's 3/5 figure over the earlier script's 4/5; the public page continues to omit that preference count. This review covered those two slides, not every A2 frame or interaction.
+- **A2 live file:** the original [Figma presentation](https://www.figma.com/design/sjcfOTEzGJTYfkeSn6JxTu/) was accessible in Chrome on 15 November 2026. Slide 14, "Idea testing", states that five readers from A1 tried idea A followed by E and that three of five picked A. Slide 20, "Selected direction", confirms A + C + K, scores of 11/12 for A and 12/12 for K, and three of five readers preferring A when choosing a next read. This supports the A3 recap's 3/5 figure over the earlier script's 4/5; the public A2 chapter now includes the directly verified 3/5 preference count and the fixed task order. This review covered those two slides, not every A2 frame or interaction.
 - **A3 prototype:** supplied link: <https://www.figma.com/proto/zPU9X8697ZM5EA3bj2FdTb?node-id=5-2&starting-point-node-id=5%3A2>. Screenshots were extracted unchanged from the supplied A3 PDF. They are not independent proof that all current prototype interactions were tested.
 - **Round 2:** the PDF marks the two changes as proposed and requiring validation. Its final shortlist screenshot still shows “Shuffle picks” and “Change answers.” Do not claim the new labels were implemented or that a second test occurred without additional evidence.
 - **Individual contribution:** the role title “team leader” is user-confirmed. Do not invent specific personal duties, claim sole authorship, or turn team achievements into first-person individual achievements. Use team attribution unless the user confirms the allocation of work.
@@ -48,6 +49,9 @@ The five-person sample and possible familiarity/task-order effects (A3 p16) rema
 - **Secondary sources:** competitor features, literature and public discussions shaped questions (Background pp2–4). They are not evidence of this team's participants' behavior. A1 p13's decorative meeting photo is not a photo of study participants.
 
 ## Screenshot provenance
+
+`a2-decision-matrix.png` is an unmodified 3840 × 2160 PNG export of A2 slide 10, “Decision matrix”, from Figma node `18:184`. It was exported in the user’s signed-in Chrome session on 15 November 2026. The matrix shows all twelve ideas A–L against impact and effort; filled green identifies A, C and K as the selected direction, outlined green marks E as tested against A, and dashed borders mark I and J as saved for later. The visible image and accompanying text are taken directly from that frame.
+
 
 Original embedded images were extracted from `a3-final-presentation.pdf` without changing their contents:
 

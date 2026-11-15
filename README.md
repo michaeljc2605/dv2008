@@ -15,7 +15,7 @@ Published through GitHub Pages Actions on 15 November 2026 and verified in Chrom
 - Original prototype screens, an A2/A3 comparison and six-step interactive walkthrough.
 - Study outcomes, limits, proposed follow-up changes and personal takeaways.
 - Figma embed loaded on request, plus a direct prototype link and static screen fallback.
-- Original research and presentation PDFs.
+- Research and presentation PDFs, including the user-requested wording edit to A3 pages 19–20.
 - The exact live portfolio background: fixed industrial scene, scroll-driven six-stage palette, smoke, circuits, stars, transparent sections, mobile and reduced-motion support.
 
 ## Preview locally
@@ -52,14 +52,14 @@ If the repository already exists, clone or fetch `michaeljc2605/dv2008`, inspect
 | `background.css`, `background.js` | Actual portfolio scene and canvas animation, with a canvas-unavailable fallback |
 | `app.js` | Walkthrough, comparison, image dialog, embed and chapter indicator |
 | `assets/screens/` | Optimised prototype images extracted from the supplied final deck |
-| `docs/` | Original PDFs and editorial source notes |
+| `docs/` | Research/presentation PDFs and editorial source notes |
 | `scripts/` | Dependency-free build and integrity checks |
 
 ## Before final assignment submission
 
 The Notion assignment brief was accessed and reviewed in Chrome on 15 November 2026. It asks for an individual case study aimed at a recruiter or design manager, covering the problem, design process and reasoning, individual contributions, relevant visuals, and reflection on learnings, challenges, trade-offs and improvements. It sets no minimum or maximum word count or required number of pages or screens, and allows any accessible, easy-to-read format. The assessment criteria are recorded in `docs/sources.md`; reviewing the brief does not establish a grade or full rubric compliance.
 
-The original A2 Figma presentation's idea-testing and selected-direction slides were reviewed in Chrome on 15 November 2026, confirming the five-reader comparison, selected A + C + K flow and reported scores. Read `docs/sources.md` for exact evidence and source discrepancies. User confirmation dated 14 November 2026 treats study data as actual. Round 2 refinements remain proposed and unretested unless separately verified.
+The original A2 Figma presentation's idea-testing and selected-direction slides were reviewed in Chrome on 15 November 2026, including the original twelve-idea decision matrix, confirming the five-reader comparison, selected A + C + K flow and reported scores. Read `docs/sources.md` for exact evidence and source discrepancies. User confirmation dated 14 November 2026 treats study data as actual. Round 2 refinements remain proposed and unretested unless separately verified.
 
 The embedded Figma prototype still depends on the file's sharing settings and Figma availability. It has a permanent external-link fallback. This is a student concept, not a functioning Goodreads integration or recommendation backend.
 
