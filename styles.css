@@ -39,6 +39,14 @@
 @media(max-width:540px){.decision-matrix{margin-bottom:32px}.decision-matrix figcaption{padding:21px 20px}.decision-matrix .small-label{font-size:8px}.decision-matrix h3{font-size:18px}.decision-matrix figcaption>p{font-size:11px}.decision-matrix .matrix-source{font-size:9px}.decision-matrix .wireframe-link>span{font-size:7px;padding:6px 8px;right:7px;bottom:7px}.matrix-ideas{padding-inline:20px}.matrix-ideas summary{font-size:11px}.matrix-ideas dl{grid-template-columns:1fr;gap:15px}.matrix-ideas dl>div{padding-top:13px}}
 @media print{.decision-matrix{background:#fff;break-inside:avoid}.decision-matrix figcaption>p,.matrix-ideas dd{color:#333}}
 
+/* Close the case study with the people behind the work. */
+.thanks{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);align-items:center;gap:clamp(32px,6vw,80px);border-top:1px solid var(--line);padding-block:80px 90px;scroll-margin-top:40px}
+.thanks-photo{margin:0;min-width:0}.thanks-photo img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:4px}.thanks-photo figcaption{display:flex;justify-content:space-between;gap:12px;margin-top:15px;color:var(--muted);font-size:10px}.thanks-photo figcaption span{white-space:nowrap}
+.thanks-copy{min-width:0}.thanks-copy .eyebrow{margin-bottom:22px}.thanks-copy h2{font-size:clamp(54px,5.4vw,78px);margin:0 0 28px}.thanks-copy h2 span{color:var(--cyan)}.thanks-copy .thanks-message{color:var(--muted);font-size:13px;line-height:1.9;max-width:42ch}.thanks-copy strong{color:var(--text)}.thanks-copy .thanks-signature{margin-top:28px;color:var(--text);font-family:'Playfair Display',serif;font-size:23px;font-style:italic}
+@media(max-width:800px){.thanks{grid-template-columns:1fr;gap:35px;padding-block:65px}.thanks-copy h2{font-size:60px}.thanks-copy h2 br{display:none}.thanks-copy .thanks-message{max-width:60ch}.thanks-copy .eyebrow{margin-bottom:16px}}
+@media(max-width:540px){.thanks{gap:30px}.thanks-photo figcaption{font-size:8px;gap:8px;margin-top:12px}.thanks-copy h2{font-size:48px;margin-bottom:22px}.thanks-copy .thanks-message{font-size:12px}.thanks-copy .thanks-signature{margin-top:22px}}
+@media print{.thanks{break-inside:avoid;gap:30px;padding-block:30px}.thanks-photo figcaption,.thanks-copy .thanks-message,.thanks-copy strong,.thanks-copy .thanks-signature,.thanks-copy h2 span{color:#333}.thanks-copy h2{font-size:36px}}
+
 /* Keep the system pointer available; the portfolio glow is an added cue. */
 html,body{cursor:auto}
 a[href],button:not(:disabled),summary,[role="tab"]{cursor:pointer}

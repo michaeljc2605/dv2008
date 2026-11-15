@@ -52,6 +52,7 @@ If the repository already exists, clone or fetch `michaeljc2605/dv2008`, inspect
 | `background.css`, `background.js` | Actual portfolio scene and canvas animation, with a canvas-unavailable fallback |
 | `app.js` | Walkthrough, comparison, image dialog, embed and chapter indicator |
 | `assets/screens/` | Optimised prototype images extracted from the supplied final deck |
+| `assets/people/` | User-supplied group photograph for the closing special thanks |
 | `docs/` | Research/presentation PDFs and editorial source notes |
 | `scripts/` | Dependency-free build and integrity checks |
 

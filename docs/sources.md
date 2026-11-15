@@ -72,6 +72,10 @@ Original embedded images were extracted from `a3-final-presentation.pdf` without
 
 Book titles, covers, ratings and review text in these images are prototype content. Do not present them as current external book/review data verified by this website.
 
+## Team photograph and thanks
+
+On 15 November 2026, Michael supplied the group photograph `photo_2026-11-14 22.46.59.jpeg` and requested a special thank-you to Prof. Ice and his teammates. `assets/people/dv2008-team.jpeg` is an unchanged copy of that photograph, displayed at its full 4:3 proportions. The closing acknowledgment uses the confirmed team names Celine, Janice and Michelle, and the requested name Prof. Ice. No identities are assigned to positions in the image, and no specific occasion is claimed.
+
 ## Exact portfolio background
 
 The fixed industrial-evolution background uses the actual CSS layers and JavaScript renderer fetched from https://michaeljc2605.github.io/ on 14 November 2026. Its six palettes, seeded particles, smoke, factory silhouettes, grid, network and stars follow the same full-document scroll progress. Content uses the final live rgba(10,11,18,0.68) overlay; the footer uses rgba(14,14,20,0.7). Only a missing/failed canvas-context guard was added; CSS palettes still work without canvas. Drawing-command and palette parity passed at 0%,20%,40%,60%,80%,100% scroll at widths390 and1440. Browser preview was unavailable because the managed preview relay was missing.
