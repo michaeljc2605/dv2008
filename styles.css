@@ -38,3 +38,16 @@
 @media(max-width:800px){.decision-matrix figcaption{padding:24px}.matrix-ideas{padding-inline:24px}.matrix-ideas dl{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.decision-matrix h3{font-size:19px}}
 @media(max-width:540px){.decision-matrix{margin-bottom:32px}.decision-matrix figcaption{padding:21px 20px}.decision-matrix .small-label{font-size:8px}.decision-matrix h3{font-size:18px}.decision-matrix figcaption>p{font-size:11px}.decision-matrix .matrix-source{font-size:9px}.decision-matrix .wireframe-link>span{font-size:7px;padding:6px 8px;right:7px;bottom:7px}.matrix-ideas{padding-inline:20px}.matrix-ideas summary{font-size:11px}.matrix-ideas dl{grid-template-columns:1fr;gap:15px}.matrix-ideas dl>div{padding-top:13px}}
 @media print{.decision-matrix{background:#fff;break-inside:avoid}.decision-matrix figcaption>p,.matrix-ideas dd{color:#333}}
+
+/* Keep the system pointer available; the portfolio glow is an added cue. */
+html,body{cursor:auto}
+a[href],button:not(:disabled),summary,[role="tab"]{cursor:pointer}
+.cursor-dot,.cursor-outline{position:fixed;top:0;left:0;z-index:10000;border-radius:50%;pointer-events:none;opacity:0;will-change:transform;transition:width .2s,height .2s,opacity .15s,background-color .3s,border-color .3s}
+.cursor-dot{width:8px;height:8px;background:var(--evo-cursor,var(--cyan));box-shadow:0 0 18px var(--evo-cursor,var(--cyan))}
+.cursor-outline{width:40px;height:40px;border:2px solid var(--evo-cursor,var(--cyan))}
+.cursor-dot.is-visible{opacity:1}.cursor-outline.is-visible{opacity:.65}
+.cursor-dot.is-interactive{width:16px;height:16px}.cursor-outline.is-interactive{width:60px;height:60px}
+body:has(dialog[open]) .cursor-dot,body:has(dialog[open]) .cursor-outline{visibility:hidden}
+@media(any-pointer:coarse) and (any-hover:none){.cursor-dot,.cursor-outline{display:none}}
+@media(prefers-reduced-motion:reduce){.cursor-dot,.cursor-outline{transition:none}}
+@media print{.cursor-dot,.cursor-outline{display:none}}

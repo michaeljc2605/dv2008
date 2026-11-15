@@ -106,3 +106,44 @@ window.addEventListener('scroll',()=>{
 window.addEventListener('resize',updateReadingPosition);
 window.addEventListener('load',updateReadingPosition);
 updateReadingPosition();
+
+// Match the portfolio's visible pointer without ever hiding the native cursor.
+(() => {
+  const dot = document.querySelector('.cursor-dot');
+  const outline = document.querySelector('.cursor-outline');
+  if (!dot || !outline) return;
+  const mouseAvailable = window.matchMedia('(any-hover: hover) and (any-pointer: fine)');
+  const interactive = 'a[href], button:not(:disabled), summary, [role="tab"]';
+  const cursors = [dot, outline];
+  function hideCursorEffect() {
+    cursors.forEach(cursor => cursor.classList.remove('is-visible', 'is-interactive'));
+  }
+  document.addEventListener('pointermove', event => {
+    if (!mouseAvailable.matches || event.pointerType !== 'mouse' || document.querySelector('dialog[open]')) {
+      hideCursorEffect();
+      return;
+    }
+    const target = event.target instanceof Element ? event.target : null;
+    if (target?.closest('iframe')) {
+      hideCursorEffect();
+      return;
+    }
+    const overControl = Boolean(target?.closest(interactive));
+    cursors.forEach(cursor => {
+      cursor.style.transform = `translate3d(${event.clientX}px, ${event.clientY}px, 0) translate(-50%, -50%)`;
+      cursor.classList.add('is-visible');
+      cursor.classList.toggle('is-interactive', overControl);
+    });
+  }, { passive: true });
+  document.addEventListener('pointerout', event => {
+    if (!event.relatedTarget || (event.relatedTarget instanceof Element && event.relatedTarget.closest('iframe'))) hideCursorEffect();
+  });
+  document.addEventListener('pointerdown', event => {
+    if (event.pointerType !== 'mouse') hideCursorEffect();
+  }, { passive: true });
+  document.addEventListener('pointercancel', hideCursorEffect);
+  document.addEventListener('keydown', hideCursorEffect);
+  document.addEventListener('visibilitychange', hideCursorEffect);
+  window.addEventListener('blur', hideCursorEffect);
+  mouseAvailable.addEventListener('change', hideCursorEffect);
+})();
