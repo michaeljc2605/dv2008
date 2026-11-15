@@ -16,6 +16,7 @@ Published through GitHub Pages Actions on 15 November 2026 and verified in Chrom
 - Study outcomes, limits, proposed follow-up changes and Michael's concrete reflection on learning FigJam, colour theory and interviewing.
 - Figma embed loaded on request, plus a direct prototype link and static screen fallback.
 - Research and presentation PDFs, including the user-authorised correction of A3 data-status wording in visible and extractable text.
+- A downloadable 12-page individual case-study PDF for submission backup, linked from Project Materials.
 - The exact live portfolio background: fixed industrial scene, scroll-driven six-stage palette, smoke, circuits, stars, transparent sections, mobile and reduced-motion support.
 
 ## Preview locally
