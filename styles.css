@@ -255,3 +255,30 @@ body:has(dialog[open]) .cursor-dot,body:has(dialog[open]) .cursor-outline{visibi
   .idea-sketch figcaption { padding: 20px; }
   .idea-sketch p { font-size: 13px; }
 }
+
+.personal-decision {
+  margin: 42px 0 56px;
+  padding: 30px;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--cyan);
+  border-radius: 4px;
+  background: rgba(10, 14, 39, .58);
+}
+.personal-decision .eyebrow { margin-bottom: 13px; }
+.personal-decision h3 { font-size: clamp(22px, 2.4vw, 32px); margin-bottom: 24px; }
+.personal-decision-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+.personal-decision-grid article { padding-top: 16px; border-top: 1px solid var(--line); }
+.personal-decision-grid .small-label { color: var(--cyan); font-size: 9px; }
+.personal-decision-grid p { color: var(--muted); font-size: 13px; line-height: 1.8; margin: 12px 0 0; }
+.personal-decision-note { border-top: 1px solid var(--line); padding-top: 15px; margin-top: 26px; color: var(--muted); font-size: 11px; }
+.chapter-nav-more { display: none; }
+.chapter-nav-more[hidden] { display: none !important; }
+@media screen and (max-width:800px) {
+  .chapter-nav>div { padding-right: 94px; }
+  .chapter-nav-more { position: absolute; right: 20px; top: 0; bottom: 0; z-index: 2; width: 96px; display: flex; align-items: center; justify-content: flex-end; gap: 5px; padding: 0; border: 0; background: linear-gradient(90deg, transparent, #0a0e27 30%); color: var(--cyan); font-family: var(--body); font-size: 10px; font-weight: 700; white-space: nowrap; }
+  .personal-decision-grid { grid-template-columns: 1fr; gap: 15px; }
+}
+@media screen and (max-width:540px) {
+  .personal-decision { margin: 30px 0 42px; padding: 22px; }
+  .personal-decision-grid p { font-size: 12px; }
+}

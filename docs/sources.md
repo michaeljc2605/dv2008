@@ -33,6 +33,7 @@ The correction affects pages 16, 18, 19 and 20. It updates the visible vector le
 | Start reading moves the book to Currently Reading; Not now excludes it for 30 days; Remove removes it from Want to Read | A3 pp14,24–25. Prototype behavior, not a deployed Goodreads integration. |
 | Five readers, ages 20–23; Zoom think-aloud; four tasks; 43-book prototype | A3 pp15–17. Session date shown as 7 November 2026. |
 | Choice within 3 minutes 3/5 → 5/5; median choice time 148s → 88s; confidence 2.8 → 4.0 /5; ease 3.8 → 5.8 /7; reasons added 3/5 | A3 p18, with the user's data-status confirmation below. Preserve scale labels and the limited number of participants. |
+| Michael's fit-card reflection | Michael confirmed that he made the A2 “Is it for me?” card and decide step. A3 p19 reports that four of five readers checked mood tags and review trade-offs before choosing. The website's simpler card hierarchy is Michael's proposed next change, not an implemented or retested team refinement. The observation does not establish that the card caused the overall timing difference. |
 | Save confirmation and clearer refresh/preference labels | A3 p20 describes proposed follow-up changes. Implementation and retesting are not established by the PDFs. |
 | Palette, typography and reported accessibility checks | A3 p26. Team-reported checks, not independent accessibility certification. |
 

@@ -85,6 +85,23 @@ $('load-prototype').addEventListener('click',()=>{
 });
 
 const sectionLinks=[...document.querySelectorAll('.chapter-nav a')];
+const chapterNavList=$('chapter-nav-list');
+const chapterNavMore=$('chapter-nav-more');
+function updateChapterNavCue(){
+  const hasMore=window.matchMedia('(max-width: 800px)').matches &&
+    chapterNavList.scrollWidth-chapterNavList.clientWidth-chapterNavList.scrollLeft>6;
+  chapterNavMore.hidden=!hasMore;
+}
+chapterNavMore.addEventListener('click',()=>{
+  chapterNavList.scrollBy({
+    left:chapterNavList.clientWidth*.72,
+    behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'
+  });
+});
+chapterNavList.addEventListener('scroll',updateChapterNavCue,{passive:true});
+window.addEventListener('resize',updateChapterNavCue);
+window.addEventListener('load',updateChapterNavCue);
+updateChapterNavCue();
 const observedSections=sectionLinks.map(link=>document.querySelector(link.getAttribute('href'))).filter(Boolean);
 function updateReadingPosition(){
   const total=document.documentElement.scrollHeight-window.innerHeight;
